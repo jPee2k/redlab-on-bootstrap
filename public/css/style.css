@@ -26,7 +26,14 @@ body {
 
 .main-content {
   margin-top: 80px;
-  min-height: 90vh;
+  min-height: 80vh;
+}
+.main-content .title {
+  text-align: center;
+  margin-bottom: 26px;
+}
+.main-content .table .thead-dark th {
+  background-color: #000;
 }
 
 .footer {

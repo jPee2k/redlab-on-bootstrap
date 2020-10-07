@@ -34,7 +34,19 @@ body {
 .main-content {
   margin-top: 80px;
 
-  min-height: 90vh;
+  min-height: 80vh;
+
+  .title {
+    text-align: center;
+
+    margin-bottom: 26px;
+  }
+
+  .table {
+    .thead-dark th {
+      background-color: $dark;
+    }
+  }
 }
 
 .footer {
