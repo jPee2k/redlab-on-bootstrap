@@ -1,17 +1,49 @@
-/* Error: Undefined variable.
- *   ,
- * 9 |   font-family: $font-family-base;
- *   |                ^^^^^^^^^^^^^^^^^
- *   '
- *   src/scss/app.scss 9:16  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 9 \2502    font-family: $font-family-base;\a   \2502                 ^^^^^^^^^^^^^^^^^\a   \2575 \a   src/scss/app.scss 9:16  root stylesheet";
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
+
+.navbar {
+  padding: 26px 9vw 14px 9vw;
+}
+.navbar .navbar-brand img {
+  height: 26px;
+  width: auto;
+}
+.navbar .nav-item .nav-link {
+  color: #000;
+}
+.navbar .nav-item .nav-link:hover {
+  color: #ed1c24;
+  transition: 0.25s;
+}
+
+.main-content {
+  margin-top: 80px;
+  min-height: 90vh;
+}
+
+.footer {
+  height: 100px;
+  text-align: center;
+}
+.footer a {
+  color: #000;
+  font-size: 16px;
+  font-style: italic;
+}
+.footer a:hover {
+  color: #ed1c24;
+  transition: 0.25s;
+}
+.footer p {
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

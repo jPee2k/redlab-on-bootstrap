@@ -1,16 +1,23 @@
 @import 'variables';
+@import 'mixin';
 
 body {
   margin: 0;
   padding: 0;
 
   min-width: 320px;
+  max-width: 1280px;
+
+  margin-right: auto;
+  margin-left: auto;
+  
+  color: rgba(0, 0, 0, 0.5);
 
   box-sizing: border-box;
 }
 
 .navbar {
-  padding: 16px 6vw 12px 6vw;
+  padding: 26px 9vw 14px 9vw;
 
   .navbar-brand img {
     height: 26px;
@@ -19,19 +26,30 @@ body {
 
   .nav-item {
     .nav-link {
-      color: $dark;
-
-      &:hover {
-        color: $red;
-
-        transition: 0.25s;
-      }
+      @include link-decoration;
     }
   }
 }
 
 .main-content {
-  margin-top: 70px;
+  margin-top: 80px;
 
-  max-width: 1280px;
+  min-height: 90vh;
+}
+
+.footer {
+  height: 100px;
+
+  text-align: center;
+
+  a {
+    @include link-decoration;
+
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  p {
+    margin: 5px 0;
+  }
 }
