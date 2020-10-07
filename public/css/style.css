@@ -9,35 +9,41 @@ body {
   box-sizing: border-box;
 }
 
-.navbar {
+.main-header {
+  min-height: 9vh;
+}
+.main-header .navbar {
   padding: 26px 9vw 14px 9vw;
 }
-.navbar .navbar-brand img {
+.main-header .navbar .navbar-brand img {
   height: 26px;
   width: auto;
 }
-.navbar .nav-item .nav-link {
+.main-header .navbar .nav-item .nav-link {
   color: #000;
 }
-.navbar .nav-item .nav-link:hover {
+.main-header .navbar .nav-item .nav-link:hover {
   color: #ed1c24;
   transition: 0.25s;
 }
 
 .main-content {
-  margin-top: 80px;
-  min-height: 80vh;
+  min-height: 74vh;
 }
 .main-content .title {
   text-align: center;
   margin-bottom: 26px;
 }
 .main-content .table .thead-dark th {
+  text-align: center;
   background-color: #000;
+}
+.main-content .table tbody td {
+  text-align: center;
 }
 
 .footer {
-  height: 100px;
+  min-height: 9vh;
   text-align: center;
 }
 .footer a {
