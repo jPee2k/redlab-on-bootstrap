@@ -10,7 +10,7 @@ body {
 }
 
 .main-header {
-  min-height: 9vh;
+  min-height: 80px;
 }
 .main-header .navbar {
   padding: 26px 9vw 14px 9vw;
@@ -28,23 +28,68 @@ body {
 }
 
 .main-content {
-  min-height: 74vh;
+  min-height: 70vh;
 }
 .main-content .title {
   text-align: center;
   margin-bottom: 26px;
 }
-.main-content .table .thead-dark th {
+.main-content .btn-outline-secondary {
+  color: #000;
+  background-color: transparent;
+}
+.main-content .btn-outline-secondary:hover {
+  color: #ed1c24;
+  transition: 0.25s;
+}
+.main-content .table thead th {
   text-align: center;
+}
+.main-content .table .thead-dark th {
   background-color: #000;
 }
 .main-content .table tbody td {
   text-align: center;
 }
+.main-content .staff-list {
+  margin-top: 12px;
+}
+.main-content .staff-list .table {
+  table-layout: fixed;
+}
+.main-content .staff-list .table tbody tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 2vw;
+}
+.main-content .staff-list th:first-child {
+  width: 12vw;
+}
+.main-content .staff-list th:last-child {
+  width: 120px;
+}
+.main-content .staff-list td {
+  position: relative;
+}
+.main-content .staff-list td a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 20%;
+  color: #000;
+}
+.main-content .staff-list td a:hover {
+  color: #ed1c24;
+  transition: 0.25s;
+}
 
 .footer {
-  min-height: 9vh;
+  min-height: 80px;
   text-align: center;
+}
+.footer #author {
+  display: inline-block;
 }
 .footer a {
   color: #000;
